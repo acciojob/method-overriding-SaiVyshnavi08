@@ -10,16 +10,18 @@ public static class A {
 public static class B extends A{
 
 
+      @Override
+
        public String meth(){
     return "Method is overridden in extended class B";
        }
     }
     public static void main(String[] args){
 
-   A obj1 = new A();
-   System.out.println(obj1.meth());
+    A a = new A();
+    a.meth();
 
-   B obj = new B();
-   System.out.println(obj.meth());
+    B b1 = new B();
+    b1.meth();
     }
 }
